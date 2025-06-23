@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre a Incubatech</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+      });
+    }
+    window.onload = () => switchLanguage('pt');
+  </script>
+</head>
+<body>
+  <header>
+    <img src="../img/logo-incubatech.png" alt="Logo Incubatech" class="logo" />
+    <nav>
+      <button onclick="switchLanguage('pt')">Português</button>
+      <button onclick="switchLanguage('en')">English</button>
+      <a href="../index.html">Início</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção em Português -->
+    <section data-lang="pt">
+      <h1>Sobre a Incubatech</h1>
+      <p>
+        A <strong>Incubatech – Incubadora de Startups de Tecnologia</strong> é uma unidade independente, voltada ao fomento, incubação e aceleração de startups e projetos de base científica e tecnológica com potencial de geração de negócios.
+      </p>
+
+      <p>
+        Nosso papel é identificar ideias inovadoras, avaliar sua viabilidade, apoiar sua estruturação e transformá-las em negócios escaláveis, sustentáveis e conectados com o futuro.
+      </p>
+
+      <p>
+        Oferecemos mentoria estratégica, apoio técnico, articulação institucional e acesso a recursos para que cada projeto incubado atinja o próximo nível.
+      </p>
+
+      <h2>Compromisso com resultados</h2>
+      <p>
+        A Incubatech atua com responsabilidade, profissionalismo e visão de mercado. As ideias submetidas são avaliadas sob critérios técnicos, organizacionais e de impacto. As que forem aceitas, passam a fazer parte de um processo estruturado de incubação e aceleração.
+      </p>
+
+      <h2>Transparência e parceria</h2>
+      <p>
+        Todo o processo é regido por acordos claros de participação, retorno e propriedade intelectual. Nossa relação com os incubados é baseada em confiança mútua, geração de valor e impacto positivo.
+      </p>
+
+      <h2>Venha construir com a gente</h2>
+      <p>
+        Se você tem uma ideia transformadora e acredita no poder da tecnologia, a Incubatech é o lugar certo para dar o primeiro passo.
+      </p>
+    </section>
+
+    <!-- English Section -->
+    <section data-lang="en">
+      <h1>About Incubatech</h1>
+      <p>
+        <strong>Incubatech – Technology Startup Incubator</strong> is an independent unit focused on supporting, incubating, and accelerating scientific and technological projects with strong business potential.
+      </p>
+
+      <p>
+        Our role is to identify innovative ideas, assess their feasibility, and transform them into scalable and sustainable ventures.
+      </p>
+
+      <p>
+        We offer strategic mentoring, technical support, institutional articulation, and funding access to take each incubated project to the next level.
+      </p>
+
+      <h2>Commitment to results</h2>
+      <p>
+        Incubatech works with responsibility, professionalism, and a market-oriented mindset. Submitted ideas are evaluated under technical, organizational, and impact criteria. Accepted ideas enter a structured incubation and acceleration program.
+      </p>
+
+      <h2>Transparency and partnership</h2>
+      <p>
+        All processes are governed by clear agreements on participation, returns, and intellectual property. Our relationship with incubated teams is based on mutual trust, value creation, and positive impact.
+      </p>
+
+      <h2>Build with us</h2>
+      <p>
+        If you have a transformative idea and believe in the power of technology, Incubatech is the right place to start.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Incubatech. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
