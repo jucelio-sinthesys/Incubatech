@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Incubatech – Incubadora de Startups de Tecnologia</title>
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    function switchLanguage(lang) {
-      document.querySelectorAll('[data-lang]').forEach(el => {
-        el.style.display = el.dataset.lang === lang ? 'block' : 'none';
-      });
-    }
-    window.onload = () => switchLanguage('pt');
-  </script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <img src="img/logo-incubatech.png" alt="Logo Incubatech" class="logo" />
     <nav>
-      <button onclick="switchLanguage('pt')">Português</button>
-      <button onclick="switchLanguage('en')">English</button>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="quem-somos/index.html">Quem Somos</a></li>
+        <li><a href="projeto1.html">Projeto 1</a></li>
+        <li><a href="formulario/index.html">Formulário</a></li>
+        <li><a href="privacidade/index.html">Política de Privacidade</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Seção em Português -->
-    <section data-lang="pt">
+    <section>
       <h1>Bem-vindo à Incubatech</h1>
       <p>
-        A <strong>Incubatech – Incubadora de Startups de Tecnologia</strong> é uma unidade independente voltada à incubação, aceleração e internacionalização de startups e projetos de base científica, tecnológica e inovadora, com ênfase em impacto social, transformação digital e inovação aberta.
+        A <strong>Incubatech – Incubadora de Startups de Tecnologia</strong> é uma unidade independente voltada ao fomento, incubação e aceleração de startups e projetos de base científica e tecnológica com potencial de geração de negócios.
       </p>
+      <p>
+        Nosso papel é identificar ideias inovadoras, avaliar sua viabilidade, apoiar sua estruturação e transformá-las em negócios escaláveis, sustentáveis e conectados com o futuro.
+      </p>
+    </section>
 
+    <section>
       <h2>Eixos Temáticos Prioritários</h2>
       <ul>
         <li>Tecnologias emergentes: IA, Computação Quântica, Blockchain, IoT, Biotecnologia, Energias Limpas</li>
@@ -38,37 +39,22 @@
         <li>Transformação digital, inovação aberta e novos modelos de negócio</li>
         <li>Validação de mercado, pitch, modelagem e acesso a investimentos</li>
       </ul>
+    </section>
 
+    <section>
       <h2>Projeto Incubado</h2>
-      <p><a href="projeto1.html">IA para Interpretação Automatizada de Políticas Públicas</a></p>
-
-      <h2>Participe</h2>
       <p>
-        Acesse nossa página <a href="institucional-incubatech/">Quem Somos</a> e manifeste interesse no formulário de adesão (em breve).
+        <a href="projeto1.html">IA para Interpretação Automatizada de Políticas Públicas</a>
       </p>
     </section>
 
-    <!-- English Section -->
-    <section data-lang="en">
-      <h1>Welcome to Incubatech</h1>
+    <section>
+      <h2>Participe</h2>
       <p>
-        <strong>Incubatech – Technology Startup Incubator</strong> is an independent unit focused on the incubation, acceleration, and internationalization of startups and projects based on science, technology, and innovation. Its core themes include social impact, digital transformation, and open innovation.
+        Antes de enviar sua proposta, leia nossa <a href="privacidade/index.html">Política de Privacidade</a>.
       </p>
-
-      <h2>Key Thematic Areas</h2>
-      <ul>
-        <li>Emerging technologies: AI, Quantum Computing, Blockchain, IoT, Biotechnology, Clean Energy</li>
-        <li>Solutions for: Health, Environment, Education, Smart Cities, Civil Construction, Urban Mobility</li>
-        <li>Digital transformation, open innovation, and new business models</li>
-        <li>Market validation, pitch, business modeling, and funding access</li>
-      </ul>
-
-      <h2>Incubated Project</h2>
-      <p><a href="projeto1.html">AI for Automated Interpretation of Public Policies</a></p>
-
-      <h2>Join Us</h2>
       <p>
-        Read more on our <a href="institucional-incubatech/">About Us</a> page and express interest via the application form (coming soon).
+        Em seguida, preencha o <a href="formulario/index.html">Formulário de Adesão</a> e participe do processo seletivo.
       </p>
     </section>
   </main>
