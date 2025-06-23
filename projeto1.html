@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto 1 – IA para Interpretação de Políticas Públicas</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+      });
+    }
+    window.onload = () => switchLanguage('pt');
+  </script>
+</head>
+<body>
+  <header>
+    <img src="img/logo-incubatech.png" alt="Logo Incubatech" class="logo" />
+    <nav>
+      <button onclick="switchLanguage('pt')">Português</button>
+      <button onclick="switchLanguage('en')">English</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção PT -->
+    <section data-lang="pt">
+      <h1>Projeto 1: IA para Interpretação Automatizada de Políticas Públicas</h1>
+      <p>
+        Este projeto tem como objetivo o desenvolvimento de uma solução baseada em Inteligência Artificial para analisar e interpretar textos legislativos, políticas públicas e documentos normativos de maneira automatizada.
+      </p>
+
+      <h2>Objetivos principais</h2>
+      <ul>
+        <li>Utilizar técnicas de PLN (Processamento de Linguagem Natural)</li>
+        <li>Aplicar ontologias e representação de conhecimento</li>
+        <li>Oferecer análises automatizadas e insights para gestores públicos</li>
+      </ul>
+
+      <h2>Aplicações</h2>
+      <p>
+        A ferramenta poderá ser utilizada por órgãos públicos, pesquisadores, jornalistas e organizações sociais para compreender o impacto de políticas públicas, detectar contradições normativas e sugerir melhorias com base em evidências.
+      </p>
+
+      <h2>Coordenação</h2>
+      <p>Jucélio Pereira da Silva</p>
+    </section>
+
+    <!-- Section EN -->
+    <section data-lang="en">
+      <h1>Project 1: AI for Automated Interpretation of Public Policies</h1>
+      <p>
+        This project aims to develop an AI-based solution to analyze and interpret legislative texts, public policies, and regulatory documents automatically.
+      </p>
+
+      <h2>Main Goals</h2>
+      <ul>
+        <li>Use Natural Language Processing (NLP) techniques</li>
+        <li>Apply ontologies and knowledge representation</li>
+        <li>Provide automated analysis and insights for public administrators</li>
+      </ul>
+
+      <h2>Applications</h2>
+      <p>
+        The tool can be used by government agencies, researchers, journalists, and social organizations to understand the impact of public policies, detect regulatory contradictions, and suggest evidence-based improvements.
+      </p>
+
+      <h2>Coordination</h2>
+      <p>Jucélio Pereira da Silva</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Incubatech. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
