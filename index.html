@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incubatech – Incubadora de Startups de Tecnologia</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+      });
+    }
+    window.onload = () => switchLanguage('pt');
+  </script>
+</head>
+<body>
+  <header>
+    <img src="img/logo-incubatech.png" alt="Logo Incubatech" class="logo" />
+    <nav>
+      <button onclick="switchLanguage('pt')">Português</button>
+      <button onclick="switchLanguage('en')">English</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção PT -->
+    <section data-lang="pt">
+      <h1>Bem-vindo à Incubatech</h1>
+      <p>
+        A <strong>Incubatech – Incubadora de Startups de Tecnologia</strong> é uma unidade independente voltada à incubação, aceleração e internacionalização de startups e projetos de base científica, tecnológica e inovadora, com ênfase em impacto social, transformação digital e inovação aberta.
+      </p>
+
+      <h2>Eixos Temáticos Prioritários</h2>
+      <ul>
+        <li>Tecnologias emergentes: IA, Computação Quântica, Blockchain, IoT, Biotecnologia, Energias Limpas</li>
+        <li>Soluções para: Saúde, Meio Ambiente, Educação, Cidades Inteligentes, Construção Civil, Mobilidade Urbana</li>
+        <li>Transformação digital, inovação aberta e novos modelos de negócio</li>
+        <li>Validação de mercado, pitch, modelagem e acesso a investimentos</li>
+      </ul>
+
+      <h2>Projeto Incubado</h2>
+      <p><a href="projeto1.html">IA para Interpretação Automatizada de Políticas Públicas</a></p>
+
+      <h2>Participe</h2>
+      <p>
+        Acesse nosso <a href="manifesto.html">Manifesto</a> e manifeste interesse no formulário de adesão (em breve).
+      </p>
+    </section>
+
+    <!-- Section EN -->
+    <section data-lang="en">
+      <h1>Welcome to Incubatech</h1>
+      <p>
+        <strong>Incubatech – Technology Startup Incubator</strong> is an independent unit focused on the incubation, acceleration, and internationalization of startups and projects based on science, technology, and innovation. Its core themes include social impact, digital transformation, and open innovation.
+      </p>
+
+      <h2>Key Thematic Areas</h2>
+      <ul>
+        <li>Emerging technologies: AI, Quantum Computing, Blockchain, IoT, Biotechnology, Clean Energy</li>
+        <li>Solutions for: Health, Environment, Education, Smart Cities, Civil Construction, Urban Mobility</li>
+        <li>Digital transformation, open innovation, and new business models</li>
+        <li>Market validation, pitch, business modeling, and funding access</li>
+      </ul>
+
+      <h2>Incubated Project</h2>
+      <p><a href="projeto1.html">AI for Automated Interpretation of Public Policies</a></p>
+
+      <h2>Join Us</h2>
+      <p>
+        Read our <a href="manifesto.html">Manifesto</a> and express interest via the application form (coming soon).
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Incubatech. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
 
