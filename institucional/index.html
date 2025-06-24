@@ -1,38 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Institucional - Incubatech</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Institucional – Incubatech</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    function switchLanguage(lang) {
+      window.location.href = lang === 'pt'
+        ? 'index.html'
+        : 'index-en.html';
+    }
+  </script>
 </head>
 <body>
   <header>
-    <h1>INCUBATECH</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="quem-somos/index.html">Quem Somos</a>
-      <a href="formulario/index.html">Formulário</a>
-      <a href="privacidade/index.html">Privacidade</a>
-      <a href="institucional-en.html">EN</a>
-    </nav>
+    <h1>Institucional</h1>
+    <button onclick="switchLanguage('en')">English</button>
   </header>
 
   <main>
-    <h2>Apresentação Institucional</h2>
     <p>
-      A Incubatech é uma incubadora virtual e independente que apoia o desenvolvimento de startups e projetos científicos e tecnológicos. Atuamos em rede com pesquisadores, empreendedores e instituições públicas e privadas.
+      A <strong>Incubatech</strong> é uma unidade estratégica e virtual voltada à identificação, incubação e aceleração de projetos de base científica e tecnológica, com alto potencial de impacto e geração de valor.
     </p>
     <p>
-      Nosso foco está na transformação de ideias em negócios sustentáveis, por meio de mentoria estratégica, articulação institucional e suporte técnico.
+      Atuamos de forma articulada com universidades, empresas, instituições públicas e redes internacionais para transformar ideias em negócios viáveis, sustentáveis e escaláveis.
     </p>
+
+    <h2>Princípios que nos guiam:</h2>
+    <ul>
+      <li>Excelência técnica e científica</li>
+      <li>Compromisso com resultados concretos</li>
+      <li>Ética, confidencialidade e respeito à autoria</li>
+      <li>Colaboração, transparência e impacto social</li>
+    </ul>
+
     <p>
-      A Incubatech integra o ecossistema H.O.L.O.S., sendo um dos pilares do modelo HALO (Highly Aligned Lean Organizations). Nosso modelo foi concebido para gerar impacto real, social e econômico, com ética, responsabilidade e compromisso com a inovação.
+      Embora virtual, a Incubatech conta com uma ampla rede de parceiros que oferecem apoio físico, técnico e institucional quando necessário. Nosso modelo híbrido garante agilidade e capilaridade sem abrir mão da seriedade e do rigor metodológico.
+    </p>
+
+    <p>
+      Acreditamos que a inovação pode nascer em qualquer lugar — e é nossa missão garantir que chegue o mais longe possível.
     </p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Incubatech</p>
+    <p>&copy; 2025 Incubatech. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
