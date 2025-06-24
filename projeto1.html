@@ -2,29 +2,81 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projeto 1 – IA para Políticas Públicas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projeto 1 – Incubatech</title>
   <link rel="stylesheet" href="style.css" />
   <script>
     function switchLanguage(lang) {
+      localStorage.setItem('lang', lang);
       document.querySelectorAll('[data-lang]').forEach(el => {
         el.style.display = el.dataset.lang === lang ? 'block' : 'none';
       });
     }
-    window.onload = () => switchLanguage('pt');
+
+    window.onload = () => {
+      const lang = localStorage.getItem('lang') || 'pt';
+      switchLanguage(lang);
+    };
   </script>
 </head>
 <body>
   <header>
+    <img src="img/logo-incubatech.png" alt="Logo Incubatech" class="logo">
     <nav>
-      <button onclick="switchLanguage('pt')">Português</button>
-      <button onclick="switchLanguage('en')">English</button>
+      <a href="index.html">Home</a>
+      <a href="quem-somos/index.html">Quem Somos</a>
+      <a href="projeto1.html">Projeto 1</a>
+      <a href="privacidade/index.html">Privacidade</a>
+      <a href="formulario/index.html">Formulário</a>
+      <span class="lang-switch">
+        <button onclick="switchLanguage('pt')">PT</button>
+        <button onclick="switchLanguage('en')">EN</button>
+      </span>
     </nav>
   </header>
 
   <main>
+    <!-- PT -->
     <section data-lang="pt">
-      <h1>Projeto Incubado: IA para Interpretação Automatizada de Políticas Públicas</h1>
+      <h1>Projeto 1: IA para Interpretação Automatizada de Políticas Públicas</h1>
       <p>
-        Este projeto visa desenvolver uma solução baseada em Inteligência Artificial para leitura, interpretação e estruturação automatizada de políticas públicas.
+        Este projeto visa desenvolver uma solução baseada em Inteligência Artificial capaz de interpretar, organizar e classificar automaticamente documentos relacionados a políticas públicas.
       </p>
+      <p>
+        Utilizando técnicas de ontologias, PLN (Processamento de Linguagem Natural) e mineração de dados, o sistema será capaz de auxiliar pesquisadores, gestores públicos e organizações da sociedade civil a navegar e entender documentos normativos, relatórios e textos legais com mais eficiência.
+      </p>
+      <h2>Objetivos</h2>
+      <ul>
+        <li>Mapear e organizar políticas públicas de forma automatizada</li>
+        <li>Facilitar o acesso à informação pública</li>
+        <li>Reduzir o tempo de análise documental em pesquisas</li>
+        <li>Apoiar decisões baseadas em evidências</li>
+      </ul>
+      <p><strong>Liderança:</strong> Jucélio Pereira da Silva</p>
+    </section>
+
+    <!-- EN -->
+    <section data-lang="en">
+      <h1>Project 1: AI for Automated Interpretation of Public Policies</h1>
+      <p>
+        This project aims to develop an AI-based solution capable of interpreting, organizing, and automatically classifying documents related to public policies.
+      </p>
+      <p>
+        By using ontologies, NLP (Natural Language Processing), and data mining techniques, the system will support researchers, public managers, and civil society organizations in navigating and understanding legal texts, normative documents, and reports more effectively.
+      </p>
+      <h2>Goals</h2>
+      <ul>
+        <li>Automatically map and organize public policies</li>
+        <li>Improve access to public information</li>
+        <li>Reduce document analysis time in research</li>
+        <li>Support evidence-based decision making</li>
+      </ul>
+      <p><strong>Lead:</strong> Jucélio Pereira da Silva</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Incubatech</p>
+  </footer>
+</body>
+</html>
