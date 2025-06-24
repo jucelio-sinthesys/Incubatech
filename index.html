@@ -2,51 +2,55 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Incubatech – Incubadora de Startups de Tecnologia</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    function switchLanguage(lang) {
+      const page = window.location.pathname.replace(/\/$/, "");
+      const newPage = page.includes("-en") ? page.replace("-en", "") : page;
+      const path = lang === 'pt' ? newPage : newPage + "-en";
+      window.location.href = path + ".html";
+    }
+  </script>
 </head>
 <body>
   <header>
     <img src="img/logo-incubatech.png" alt="Logo Incubatech" class="logo" />
     <nav>
       <a href="index.html">Início</a>
-      <a href="institucional/index.html">Institucional</a>
       <a href="quem-somos/index.html">Quem Somos</a>
+      <a href="institucional/index.html">Institucional</a>
       <a href="projeto1/index.html">Projeto 1</a>
       <a href="formulario/index.html">Formulário</a>
       <a href="privacidade/index.html">Privacidade</a>
-      <a href="index-en.html">EN</a>
+      <button onclick="switchLanguage('en')">English</button>
     </nav>
   </header>
 
   <main>
-    <h1>Bem-vindo à Incubatech</h1>
-    <p>
-      A <strong>Incubatech – Incubadora de Startups de Tecnologia</strong> é uma unidade independente voltada ao fomento, incubação e aceleração de startups e projetos de base científica e tecnológica com potencial de geração de negócios.
-    </p>
+    <section>
+      <h1>Bem-vindo à Incubatech</h1>
+      <p>
+        A <strong>Incubatech – Incubadora de Startups de Tecnologia</strong> é uma unidade independente voltada à incubação, aceleração e internacionalização de startups e projetos de base científica, tecnológica e inovadora, com ênfase em impacto social, transformação digital e inovação aberta.
+      </p>
 
-    <p>
-      Nosso papel é identificar ideias inovadoras, avaliar sua viabilidade, apoiar sua estruturação e transformá-las em negócios escaláveis, sustentáveis e conectados com o futuro.
-    </p>
+      <h2>Eixos Temáticos Prioritários</h2>
+      <ul>
+        <li>Tecnologias emergentes: IA, Computação Quântica, Blockchain, IoT, Biotecnologia, Energias Limpas</li>
+        <li>Soluções para: Saúde, Meio Ambiente, Educação, Cidades Inteligentes, Construção Civil, Mobilidade Urbana</li>
+        <li>Transformação digital, inovação aberta e novos modelos de negócio</li>
+        <li>Validação de mercado, pitch, modelagem e acesso a investimentos</li>
+      </ul>
 
-    <h2>Eixos de Atuação</h2>
-    <ul>
-      <li>Mentoria estratégica e apoio técnico</li>
-      <li>Modelagem de negócios e acesso a recursos</li>
-      <li>Ambiente de inovação 100% digital</li>
-      <li>Compromisso com impacto, ética e transparência</li>
-    </ul>
+      <h2>Projeto em destaque</h2>
+      <p><a href="projeto1/index.html">IA para Interpretação Automatizada de Políticas Públicas</a></p>
 
-    <h2>Projeto em Destaque</h2>
-    <p>
-      <a href="projeto1/index.html">IA para Interpretação Automatizada de Políticas Públicas</a>
-    </p>
-
-    <h2>Participe</h2>
-    <p>
-      Conheça nossa <a href="institucional/index.html">proposta institucional</a>, veja a <a href="privacidade/index.html">política de privacidade</a> e envie sua ideia pelo <a href="formulario/index.html">formulário de adesão</a>.
-    </p>
+      <h2>Participe</h2>
+      <p>
+        Leia nossa <a href="institucional/index.html">apresentação institucional</a>, conheça nossos critérios na <a href="privacidade/index.html">Política de Privacidade</a> e envie sua ideia pelo <a href="formulario/index.html">formulário de adesão</a>.
+      </p>
+    </section>
   </main>
 
   <footer>
