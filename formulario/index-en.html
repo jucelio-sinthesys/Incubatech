@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application Form – Incubatech</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    function switchLanguage(lang) {
+      window.location.href = lang === 'pt'
+        ? 'index.html'
+        : 'index-en.html';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Application Form</h1>
+    <button onclick="switchLanguage('pt')">Português</button>
+  </header>
+
+  <main>
+    <p>Fill out the form below to submit your idea or project to Incubatech:</p>
+
+    <form>
+      <label for="name">Full name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="institution">Institution (if any):</label><br />
+      <input type="text" id="institution" name="institution" /><br />
+
+      <label for="summary">Project or idea summary:</label><br />
+      <textarea id="summary" name="summary" rows="5" required></textarea><br />
+
+      <label>
+        <input type="checkbox" required />
+        I have read and agree to the <a href="../privacidade/index-en.html" target="_blank">Privacy Policy</a>.
+      </label><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Incubatech</p>
+  </footer>
+</body>
+</html>
