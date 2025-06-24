@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Incubatech – Incubadora de Startups de Tecnologia</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+    }
+    nav ul li {
+      cursor: pointer;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+    nav ul li:hover {
+      color: #00aaff;
+      border-bottom: 2px solid #00aaff;
+    }
+    .lang-switch {
+      margin-top: 10px;
+    }
+  </style>
   <script>
     function switchLanguage(lang) {
-      localStorage.setItem('lang', lang);
       document.querySelectorAll('[data-lang]').forEach(el => {
         el.style.display = el.dataset.lang === lang ? 'block' : 'none';
       });
     }
-
-    window.onload = () => {
-      const lang = localStorage.getItem('lang') || 'pt';
-      switchLanguage(lang);
-    };
+    window.onload = () => switchLanguage('pt');
   </script>
 </head>
 <body>
   <header>
     <img src="img/logo-incubatech.png" alt="Logo Incubatech" class="logo">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="quem-somos/index.html">Quem Somos</a>
-      <a href="projeto1.html">Projeto 1</a>
-      <a href="privacidade/index.html">Privacidade</a>
-      <a href="formulario/index.html">Formulário</a>
-      <span class="lang-switch">
-        <button onclick="switchLanguage('pt')">PT</button>
-        <button onclick="switchLanguage('en')">EN</button>
-      </span>
+      <ul>
+        <li onclick="location.href='quem-somos/index.html'">Quem Somos</li>
+        <li onclick="location.href='formulario/index.html'">Formulário</li>
+        <li onclick="location.href='privacidade/index.html'">Privacidade</li>
+        <li onclick="location.href='projeto1.html'">Projeto 1</li>
+      </ul>
+      <div class="lang-switch">
+        <button onclick="switchLanguage('pt')">Português</button>
+        <button onclick="switchLanguage('en')">English</button>
+      </div>
     </nav>
   </header>
 
   <main>
-    <!-- Português -->
+    <!-- PT -->
     <section data-lang="pt">
       <h1>Bem-vindo à Incubatech</h1>
-      <p>
-        A <strong>Incubatech – Incubadora de Startups de Tecnologia</strong> é uma unidade independente voltada à incubação, aceleração e internacionalização de startups e projetos de base científica, tecnológica e inovadora.
-      </p>
-      <p>
-        Atendemos com foco em impacto social, transformação digital, inovação aberta e negócios de alto potencial.
-      </p>
+      <p>A <strong>Incubatech</strong> é uma incubadora digital voltada ao fomento, estruturação e aceleração de startups e projetos tecnológicos, com impacto social e alto potencial de mercado.</p>
+      <h2>O que oferecemos</h2>
+      <ul>
+        <li>Mentoria especializada e suporte técnico</li>
+        <li>Modelagem de negócio e acesso a redes e recursos</li>
+        <li>Foco em tecnologias como IA, Computação Quântica e Inovação Aberta</li>
+      </ul>
+      <p>Conheça nossos projetos e participe do ecossistema de inovação!</p>
     </section>
 
-    <!-- English -->
+    <!-- EN -->
     <section data-lang="en">
       <h1>Welcome to Incubatech</h1>
-      <p>
-        <strong>Incubatech – Technology Startup Incubator</strong> is an independent unit focused on incubating, accelerating, and internationalizing science- and technology-based startups and innovative projects.
-      </p>
-      <p>
-        We focus on social impact, digital transformation, open innovation, and high-potential businesses.
-      </p>
+      <p><strong>Incubatech</strong> is a digital incubator focused on fostering, structuring, and accelerating tech-based startups with social impact and market potential.</p>
+      <h2>What we offer</h2>
+      <ul>
+        <li>Specialized mentoring and technical support</li>
+        <li>Business modeling and access to networks and funding</li>
+        <li>Focus on AI, Quantum Computing, and Open Innovation</li>
+      </ul>
+      <p>Explore our projects and join the innovation ecosystem!</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Incubatech</p>
+    <p>&copy; 2025 Incubatech. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
