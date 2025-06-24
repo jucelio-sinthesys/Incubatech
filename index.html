@@ -1,61 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Incubatech – Incubadora de Startups de Tecnologia</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+    }
+    nav ul li {
+      cursor: pointer;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+    nav ul li:hover {
+      color: #00aaff;
+      border-bottom: 2px solid #00aaff;
+    }
+    .lang-switch {
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+      });
+    }
+    window.onload = () => switchLanguage('pt');
+  </script>
 </head>
 <body>
   <header>
-    <img src="img/logo-incubatech.png" alt="Logo Incubatech" class="logo" />
+    <img src="img/logo-incubatech.png" alt="Logo Incubatech" class="logo">
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="quem-somos/index.html">Quem Somos</a></li>
-        <li><a href="projeto1.html">Projeto 1</a></li>
-        <li><a href="formulario/index.html">Formulário</a></li>
-        <li><a href="privacidade/index.html">Política de Privacidade</a></li>
+        <li onclick="location.href='quem-somos/index.html'">Quem Somos</li>
+        <li onclick="location.href='formulario/index.html'">Formulário</li>
+        <li onclick="location.href='privacidade/index.html'">Privacidade</li>
+        <li onclick="location.href='projeto1.html'">Projeto 1</li>
       </ul>
+      <div class="lang-switch">
+        <button onclick="switchLanguage('pt')">Português</button>
+        <button onclick="switchLanguage('en')">English</button>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section>
+    <!-- PT -->
+    <section data-lang="pt">
       <h1>Bem-vindo à Incubatech</h1>
-      <p>
-        A <strong>Incubatech – Incubadora de Startups de Tecnologia</strong> é uma unidade independente voltada ao fomento, incubação e aceleração de startups e projetos de base científica e tecnológica com potencial de geração de negócios.
-      </p>
-      <p>
-        Nosso papel é identificar ideias inovadoras, avaliar sua viabilidade, apoiar sua estruturação e transformá-las em negócios escaláveis, sustentáveis e conectados com o futuro.
-      </p>
-    </section>
-
-    <section>
-      <h2>Eixos Temáticos Prioritários</h2>
+      <p>A <strong>Incubatech</strong> é uma incubadora digital voltada ao fomento, estruturação e aceleração de startups e projetos tecnológicos, com impacto social e alto potencial de mercado.</p>
+      <h2>O que oferecemos</h2>
       <ul>
-        <li>Tecnologias emergentes: IA, Computação Quântica, Blockchain, IoT, Biotecnologia, Energias Limpas</li>
-        <li>Soluções para: Saúde, Meio Ambiente, Educação, Cidades Inteligentes, Construção Civil, Mobilidade Urbana</li>
-        <li>Transformação digital, inovação aberta e novos modelos de negócio</li>
-        <li>Validação de mercado, pitch, modelagem e acesso a investimentos</li>
+        <li>Mentoria especializada e suporte técnico</li>
+        <li>Modelagem de negócio e acesso a redes e recursos</li>
+        <li>Foco em tecnologias como IA, Computação Quântica e Inovação Aberta</li>
       </ul>
+      <p>Conheça nossos projetos e participe do ecossistema de inovação!</p>
     </section>
 
-    <section>
-      <h2>Projeto Incubado</h2>
-      <p>
-        <a href="projeto1.html">IA para Interpretação Automatizada de Políticas Públicas</a>
-      </p>
-    </section>
-
-    <section>
-      <h2>Participe</h2>
-      <p>
-        Antes de enviar sua proposta, leia nossa <a href="privacidade/index.html">Política de Privacidade</a>.
-      </p>
-      <p>
-        Em seguida, preencha o <a href="formulario/index.html">Formulário de Adesão</a> e participe do processo seletivo.
-      </p>
+    <!-- EN -->
+    <section data-lang="en">
+      <h1>Welcome to Incubatech</h1>
+      <p><strong>Incubatech</strong> is a digital incubator focused on fostering, structuring, and accelerating tech-based startups with social impact and market potential.</p>
+      <h2>What we offer</h2>
+      <ul>
+        <li>Specialized mentoring and technical support</li>
+        <li>Business modeling and access to networks and funding</li>
+        <li>Focus on AI, Quantum Computing, and Open Innovation</li>
+      </ul>
+      <p>Explore our projects and join the innovation ecosystem!</p>
     </section>
   </main>
 
