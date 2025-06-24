@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projeto 1 - Incubatech</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Projeto 1 – Incubatech</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    function switchLanguage(lang) {
+      window.location.href = lang === 'en'
+        ? 'index-en.html'
+        : 'index.html';
+    }
+  </script>
 </head>
 <body>
   <header>
-    <h1>INCUBATECH</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="quem-somos/index.html">Quem Somos</a>
-      <a href="formulario/index.html">Formulário</a>
-      <a href="privacidade/index.html">Privacidade</a>
-      <a href="projeto1-en.html">EN</a>
-    </nav>
+    <h1>Projeto 1: Inteligência Artificial aplicada à interpretação de Políticas Públicas</h1>
+    <button onclick="switchLanguage('en')">English</button>
   </header>
 
   <main>
-    <h2>Projeto Incubado: Plataforma L.I.S.I.</h2>
     <p>
-      A Plataforma L.I.S.I. (Laboratório de Ciência Integrada & Inovação) é uma iniciativa de pesquisa avançada que promove o desenvolvimento de tecnologias nas áreas de Inteligência Artificial, Computação Quântica, Ética Digital e Educação Científica.
+      Este projeto visa desenvolver uma solução baseada em Inteligência Artificial capaz de interpretar, organizar e traduzir automaticamente políticas públicas complexas, como planos de governo, leis, decretos e programas setoriais.
     </p>
+
+    <h2>Objetivos principais:</h2>
+    <ul>
+      <li>Aplicar técnicas de IA para análise semântica e contextual de textos normativos;</li>
+      <li>Gerar resumos automatizados e mapas de políticas públicas;</li>
+      <li>Apoiar gestores públicos, pesquisadores e cidadãos na compreensão e aplicação dessas políticas.</li>
+    </ul>
+
+    <h2>Etapas previstas:</h2>
+    <ol>
+      <li>Coleta e curadoria de documentos públicos estruturados e não estruturados;</li>
+      <li>Treinamento de modelos de linguagem especializados;</li>
+      <li>Desenvolvimento de interface amigável e acessível para consulta pública.</li>
+    </ol>
+
     <p>
-      O projeto foi um dos primeiros a ser acolhido pela Incubatech e representa o potencial de integração entre ciência, sociedade e negócios.
+      Este é um projeto incubado pela Incubatech, em parceria com especialistas em governo digital, ciência de dados e direito público.
     </p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Incubatech</p>
+    <p>&copy; 2025 Incubatech. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
