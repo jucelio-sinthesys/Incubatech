@@ -3,36 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Institutional - Incubatech</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Institutional – Incubatech</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    function switchLanguage(lang) {
+      window.location.href = lang === 'pt'
+        ? 'index.html'
+        : 'index-en.html';
+    }
+  </script>
 </head>
 <body>
   <header>
-    <h1>INCUBATECH</h1>
-    <nav>
-      <a href="index-en.html">Home</a>
-      <a href="quem-somos/index-en.html">About</a>
-      <a href="formulario/index-en.html">Apply</a>
-      <a href="privacidade/index-en.html">Privacy</a>
-      <a href="institucional.html">PT</a>
-    </nav>
+    <h1>Institutional</h1>
+    <button onclick="switchLanguage('pt')">Português</button>
   </header>
 
   <main>
-    <h2>Institutional Presentation</h2>
     <p>
-      Incubatech is an independent virtual incubator that supports the development of startups and scientific-technological projects. We operate in a collaborative network with researchers, entrepreneurs, and public and private institutions.
+      <strong>Incubatech</strong> is a strategic and fully virtual unit dedicated to identifying, incubating, and accelerating science- and technology-based projects with strong potential for impact and value creation.
     </p>
     <p>
-      Our focus is turning ideas into sustainable businesses through strategic mentoring, institutional articulation, and technical support.
+      We work in collaboration with universities, companies, public institutions, and international networks to turn ideas into viable, scalable, and sustainable ventures.
     </p>
+
+    <h2>Our Guiding Principles:</h2>
+    <ul>
+      <li>Scientific and technical excellence</li>
+      <li>Commitment to concrete and measurable results</li>
+      <li>Ethics, confidentiality, and respect for authorship</li>
+      <li>Collaboration, transparency, and social impact</li>
+    </ul>
+
     <p>
-      Incubatech is part of the H.O.L.O.S. ecosystem and represents one of the pillars of the HALO model (Highly Aligned Lean Organizations). Our approach aims to generate real social and economic impact, with ethics, responsibility, and commitment to innovation.
+      Although virtual, Incubatech relies on a strong network of partners who can provide physical, technical, and institutional support whenever needed. Our hybrid model ensures agility and outreach without compromising rigor and reliability.
+    </p>
+
+    <p>
+      We believe innovation can arise anywhere — and it's our mission to help it go as far as possible.
     </p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Incubatech</p>
+    <p>&copy; 2025 Incubatech. All rights reserved.</p>
   </footer>
 </body>
 </html>
