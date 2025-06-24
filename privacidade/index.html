@@ -2,87 +2,70 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Política de Privacidade – Incubatech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade e Confidencialidade – Incubatech</title>
   <link rel="stylesheet" href="../style.css" />
   <script>
     function switchLanguage(lang) {
-      localStorage.setItem('lang', lang);
-      document.querySelectorAll('[data-lang]').forEach(el => {
-        el.style.display = el.dataset.lang === lang ? 'block' : 'none';
-      });
+      window.location.href = lang === 'en' ? 'index-en.html' : 'index.html';
     }
-
-    window.onload = () => {
-      const lang = localStorage.getItem('lang') || 'pt';
-      switchLanguage(lang);
-    };
   </script>
 </head>
 <body>
   <header>
-    <img src="../img/logo-incubatech.png" alt="Logo Incubatech" class="logo">
+    <h1>Política de Privacidade e Confidencialidade</h1>
     <nav>
-      <a href="../index.html">Home</a>
-      <a href="../quem-somos/index.html">Quem Somos</a>
-      <a href="../projeto1.html">Projeto 1</a>
-      <a href="../privacidade/index.html">Privacidade</a>
-      <a href="../formulario/index.html">Formulário</a>
-      <span class="lang-switch">
-        <button onclick="switchLanguage('pt')">PT</button>
-        <button onclick="switchLanguage('en')">EN</button>
-      </span>
+      <button onclick="switchLanguage('pt')">Português</button>
+      <button onclick="switchLanguage('en')">English</button>
     </nav>
   </header>
-
   <main>
-    <!-- PT -->
-    <section data-lang="pt">
-      <h1>Política de Privacidade e Confidencialidade</h1>
-      <p>
-        Esta política visa proteger as informações enviadas por proponentes, startups e parceiros que interagem com a Incubatech.
-      </p>
+    <section>
+      <h2>1. Objetivo</h2>
+      <p>Esta Política tem por finalidade garantir a proteção, confidencialidade e uso ético das informações recebidas pela Incubatech no processo de inscrição, análise, incubação e acompanhamento de projetos científicos e tecnológicos.</p>
 
-      <h2>1. Coleta de Dados</h2>
-      <p>Coletamos apenas os dados fornecidos voluntariamente pelos proponentes no formulário de adesão.</p>
+      <h2>2. Princípios Fundamentais</h2>
+      <ul>
+        <li>Transparência</li>
+        <li>Segurança da informação</li>
+        <li>Respeito à autoria</li>
+        <li>Consentimento informado</li>
+      </ul>
 
-      <h2>2. Uso das Informações</h2>
-      <p>As informações são utilizadas exclusivamente para análise, incubação e desenvolvimento de projetos.</p>
+      <h2>3. Coleta de Informações</h2>
+      <p>Coletamos apenas os dados fornecidos voluntariamente pelos proponentes por meio de formulários e interações diretas.</p>
 
-      <h2>3. Confidencialidade</h2>
-      <p>Toda proposta será tratada com sigilo. Nenhuma informação será compartilhada sem consentimento prévio.</p>
+      <h2>4. Uso das Informações</h2>
+      <p>Utilizamos as informações exclusivamente para fins de avaliação, seleção e desenvolvimento de projetos.</p>
 
-      <h2>4. Propriedade Intelectual</h2>
-      <p>A autoria das ideias permanece com o proponente. A Incubatech poderá propor acordos específicos.</p>
+      <h2>5. Compartilhamento e Confidencialidade</h2>
+      <ul>
+        <li>Sem compartilhamento externo sem autorização</li>
+        <li>Acesso restrito à equipe autorizada</li>
+        <li>Exclusão segura para projetos não selecionados</li>
+      </ul>
 
-      <h2>5. Concordância</h2>
-      <p>Ao submeter uma proposta, o proponente declara estar de acordo com esta política.</p>
-    </section>
+      <h2>6. Propriedade Intelectual</h2>
+      <p>A autoria e titularidade permanecem com o proponente. Havendo seleção, acordos específicos de co-desenvolvimento poderão ser firmados.</p>
 
-    <!-- EN -->
-    <section data-lang="en">
-      <h1>Privacy and Confidentiality Policy</h1>
-      <p>
-        This policy aims to protect the information submitted by proposers, startups, and partners interacting with Incubatech.
-      </p>
+      <h2>7. Armazenamento e Proteção</h2>
+      <p>Dados protegidos por autenticação, criptografia e backups regulares.</p>
 
-      <h2>1. Data Collection</h2>
-      <p>We collect only the data voluntarily provided through the application form.</p>
+      <h2>8. Direitos dos Proponentes</h2>
+      <ul>
+        <li>Acesso, correção ou exclusão de dados</li>
+        <li>Revogação de consentimento</li>
+      </ul>
 
-      <h2>2. Use of Information</h2>
-      <p>Information is used solely for analysis, incubation, and project development.</p>
+      <h2>9. Atualizações</h2>
+      <p>Notificações serão feitas sempre que esta política for modificada.</p>
 
-      <h2>3. Confidentiality</h2>
-      <p>All proposals are treated confidentially. No information will be shared without prior consent.</p>
+      <h2>10. Contato</h2>
+      <p>Dúvidas: <a href="mailto:privacidade@incubatech.org.br">privacidade@incubatech.org.br</a></p>
 
-      <h2>4. Intellectual Property</h2>
-      <p>Ideas remain the property of the proposer. Incubatech may propose specific co-development agreements.</p>
-
-      <h2>5. Agreement</h2>
-      <p>By submitting a proposal, the proposer agrees to this policy.</p>
+      <p><strong>Ao enviar qualquer proposta, você declara ter lido e aceitado esta Política.</strong></p>
     </section>
   </main>
-
   <footer>
     <p>&copy; 2025 Incubatech</p>
   </footer>
