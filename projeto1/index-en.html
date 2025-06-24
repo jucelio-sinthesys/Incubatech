@@ -3,33 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project 1 - Incubatech</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Project 1 – Incubatech</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script>
+    function switchLanguage(lang) {
+      window.location.href = lang === 'pt'
+        ? 'index.html'
+        : 'index-en.html';
+    }
+  </script>
 </head>
 <body>
   <header>
-    <h1>INCUBATECH</h1>
-    <nav>
-      <a href="index-en.html">Home</a>
-      <a href="quem-somos/index-en.html">About</a>
-      <a href="formulario/index-en.html">Apply</a>
-      <a href="privacidade/index-en.html">Privacy</a>
-      <a href="projeto1.html">PT</a>
-    </nav>
+    <h1>Incubated Project</h1>
+    <button onclick="switchLanguage('pt')">Português</button>
   </header>
 
   <main>
-    <h2>Incubated Project: L.I.S.I. Platform</h2>
+    <h2>AI for Automated Interpretation of Public Policies</h2>
+
     <p>
-      The L.I.S.I. Platform (Laboratory of Integrated Science & Innovation) is a research initiative focused on the development of advanced technologies in Artificial Intelligence, Quantum Computing, Digital Ethics, and Scientific Education.
+      This project aims to apply Artificial Intelligence to automatically interpret and convert public policy documents into structured, accessible, and actionable information.
     </p>
+
     <p>
-      This was one of the first projects accepted by Incubatech and illustrates the potential to connect science, society, and business.
+      The proposal combines techniques such as NLP (Natural Language Processing), semantic analysis, neural networks, and knowledge models to enhance the understanding and implementation of government, regulatory, and administrative guidelines.
+    </p>
+
+    <p>
+      The initiative was developed within the L.I.S.I. – Laboratory of Integrated Science & Innovation, and received methodological support from Incubatech for technical validation, business modeling, and institutional articulation.
+    </p>
+
+    <p>
+      The project intends to positively impact public administration by promoting greater efficiency, transparency, and civic participation.
     </p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Incubatech</p>
+    <p>&copy; 2025 Incubatech. All rights reserved.</p>
   </footer>
 </body>
 </html>
